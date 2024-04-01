@@ -3,9 +3,9 @@ import { LoginPage } from "./pages/login_page";
 const loginPage = new LoginPage()
 
 
-it('HomePage', function () {
+it('Should verify on Home Page', function () {
 
-    cy.visit("https://www.credpal.com");
+    cy.visit("https://www.credpal.com");//Navigate to Homepage of Credpal
 
     cy.wait(2000);
 
@@ -57,13 +57,12 @@ it('HomePage', function () {
 
     cy.get('.px-5 > .appearance-none').click({force:true});
     
-    cy.wait(10000);
+    cy.wait(3000);
 
 })
 
 
-it('AffiliatesPage', function () {
-
+it('Should navigate to Affiliates Page', function () {
     
     cy.visit("https://www.credpal.com");
 
